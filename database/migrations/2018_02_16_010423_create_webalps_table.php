@@ -15,7 +15,6 @@ class CreateWebalpsTable extends Migration
     {
         Schema::create('webalps', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('group_id');
             $table->integer('izic_id');
             $table->text('izic_name');
             $table->string('link_name');
@@ -23,7 +22,6 @@ class CreateWebalpsTable extends Migration
             $table->boolean('status');
             $table->integer('link_id');
             $table->text('type');
-            $table->timestamps();
         });
     }
 
